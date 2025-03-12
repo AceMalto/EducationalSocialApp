@@ -20,7 +20,7 @@ const Navbar = () => {
           </li>
           <li className="flex items-center pl-12 font-medium space-x-4 py-2 text-black hover:bg-gray-700 rounded">
             <HiMagnifyingGlass />
-            <a href="#about"> Find Creators</a>
+            <a href="#about"> Suggest Creators</a>
           </li>
           <li className="flex items-center pl-12 font-medium space-x-4 py-2 hover:bg-gray-700 rounded">
             <FaRegBell />
