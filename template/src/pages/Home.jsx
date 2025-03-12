@@ -1,5 +1,6 @@
 import React from 'react'
 import { FiPlus } from "react-icons/fi";
+import TopNav from '../components/TopNav';
 const Tags = [
   "Arts", "Podcast", "Music", "Games", "Writing",
   "Photography", "Video", "YouTube", "Twitch", "Facebook"
@@ -45,30 +46,28 @@ const Creators = [
 
 const Home = () => {
   return (
-    <div className='flex-wrap w-screen'>
-      <div className='flex items-center flex-row flex-wrap space-x-2 space-y-2 pt-5 px-5'>
+    <div className='flex-wrap px-10'>
+      <TopNav />
+      <div className='flex w-1/2 items-center flex-wrap space-x-2 space-y-2 px-5'>
         {
           Tags.map((categories, index) => (
-            <p key={index} className="w-fit px-5 py-2 bg-gray-200 rounded-full text-sm font-medium">{categories}</p>
+            <p key={index} className="w-fit px-5 py-2 bg-gray-200 border border-gray-300 rounded-full text-sm font-medium">{categories}</p>
           ))
         }
       </div>
 
-      <div className="flex-wrap w-screen mt-10 space-y-5 px-5">
+      <div className="mt-10 space-y-5 px-5">
         <h1 className="font-semibold text-xl">Suggested Creators</h1>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
+        <div className="flex-1 w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
           {Creators.map((creator, index) => (
-            <div key={index} className="border w-56 h-auto rounded-3xl overflow-hidden relative">
-              {/* Image - fills the container */}
+            <div key={index} className="border w-64 h-auto rounded-3xl overflow-hidden relative hover:shadow-2xl transition-all delay-75 ease-out">
               <FiPlus className='absolute top-5 right-6 rounded-full text-2xl bg-white cursor-pointer' />
               <img 
                 src={creator.picture} 
                 alt={creator.name} 
                 className="w-full h-52 object-cover"
               />
-
-              {/* Overlay text section */}
               <div className="absolute bottom-0 w-full bg-black bg-opacity-50 text-white p-3">
                 <h1 className="text-lg font-semibold">{creator.name}</h1>
                 <p className="text-xs">{creator.description}</p>

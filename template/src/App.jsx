@@ -7,11 +7,13 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Navbar />
-      <div className='flex-1'>
-        <Routes>
-          <Route path='/' element={<Home/>}/>
-        </Routes>
+      <div className='flex'>
+        <Navbar />
+        <div className='flex-1'>
+          <Routes>
+            <Route path='/' element={<Home/>}/>
+          </Routes>
+        </div>
       </div>
     </BrowserRouter>
   )
