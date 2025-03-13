@@ -56,7 +56,7 @@ const Home = () => {
         }
       </div>
 
-      <div className="mt-10 space-y-5 px-5">
+      <div className="mt-3 space-y-5 px-5 border ">
         <h1 className="font-semibold text-xl">Suggested Creators</h1>
 
         <div className="flex-1 w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">

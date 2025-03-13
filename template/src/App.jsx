@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Recents from './pages/Recents'
 
 function App() {
 
@@ -11,7 +12,7 @@ function App() {
         <Navbar />
         <div className='flex-1'>
           <Routes>
-            <Route path='/' element={<Home/>}/>
+            <Route path='/' element={<Recents/>}/>
           </Routes>
         </div>
       </div>
