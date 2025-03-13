@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Recents from './pages/Recents'
+import ClientDash from './pages/ClientDash'
 
 function App() {
 
@@ -12,7 +13,7 @@ function App() {
         <Navbar />
         <div className='flex-1'>
           <Routes>
-            <Route path='/' element={<Recents/>}/>
+            <Route path='/' element={<ClientDash/>}/>
           </Routes>
         </div>
       </div>

@@ -5,6 +5,15 @@ npm i react-router-dom
 npm axios dotenv
 
 
+# Frontend 
+MISSING Modal in Pages
+Animation !!
+Added a Map to lessen the multiple code line 
+
+-Recents 
+    added a z-10 to show the text without affecting the other div visibility 
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
