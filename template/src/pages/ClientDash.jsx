@@ -144,6 +144,8 @@
 
 import React from 'react';
 import { FaPlus, FaEllipsisH, FaPen } from "react-icons/fa";
+import { HiOutlineShare } from "react-icons/hi";
+import { BsThreeDots } from "react-icons/bs";
 
 const ClientDash = () => {
   return (
@@ -151,7 +153,15 @@ const ClientDash = () => {
       {/* Main Card */}
       <div className="w-full max-w-5xl xl:max-w-7xl rounded-xl">
         <div className="grid place-items-center">
-          <div className="bg-blue-300 h-28 md:h-40 xl:h-48 w-full rounded-3xl"></div>
+          <div className="flex justify-between p-3 bg-[#46D1DD] h-28 md:h-40 xl:h-48 w-full rounded-3xl">
+            <button className='bg-white text-sm font-medium w-32 h-10 p-2 rounded-full'>
+              Add Cover
+            </button>
+            <div className='flex space-x-2'>
+              <BsThreeDots className='bg-white w-10 h-10 p-2 rounded-full'/>
+              <HiOutlineShare className='bg-white w-10 h-10 p-2 rounded-full' />
+            </div>
+          </div>
         
           <div className="flex flex-col items-center -mt-10">
             <div className="w-20 h-20 md:w-28 md:h-28 xl:w-32 xl:h-32 rounded-full border-4 border-white bg-gray-300 flex items-center justify-center text-3xl">
@@ -178,7 +188,7 @@ const ClientDash = () => {
         <div className="flex justify-center space-x-4 mt-6 border-gray-300 pb-3 overflow-x-auto">
           {["Home", "Collections", "Shop", "About", "Memberships", "Tips"].map(
             (tab, index) => (
-              <button key={index} className="text-gray-600 hover:text-black px-3 md:px-4 py-1 text-base md:text-lg">
+              <button key={index} className="text-gray-600 border rounded-full shadow-md hover:text-black px-3 md:px-4 py-1 text-base md:text-lg">
                 {tab}
               </button>
             )
@@ -193,7 +203,7 @@ const ClientDash = () => {
             Start your blogging journey today by sharing passions with the world and 
             begin building a community that supports your creativity.
           </p>
-          <button className="mt-3 bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-2 text-base md:text-lg rounded-full">
+          <button className="mt-3 bg-yellow-400 hover:bg-yellow-500 text-white px-6 py-2 text-base md:text-lg rounded-full">
             Create Post
           </button>
         </div>
