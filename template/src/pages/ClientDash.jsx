@@ -182,6 +182,9 @@ const ClientDash = () => {
             High-quality digital assets <FaPen className="text-gray-400 text-xs" />
           </p>
           <p className="text-blue-500 text-sm md:text-base">callibri.com/YourURL</p>
+          <div>
+            <button className='mt-3 bg-yellow-400 hover:bg-yellow-500 text-white px-6 py-2 text-xs md:text-lg rounded-full'>Create Post</button>
+          </div>
         </div>
 
         {/* Tabs Section */}
@@ -193,9 +196,6 @@ const ClientDash = () => {
               </button>
             )
           )}
-          <div>
-            <button className='mt-3 bg-yellow-400 hover:bg-yellow-500 text-white px-6 py-2 text-base md:text-lg rounded-full'>Create Post</button>
-          </div>
         </div>
 
 
