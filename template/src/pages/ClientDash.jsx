@@ -154,12 +154,12 @@ const ClientDash = () => {
       <div className="w-full max-w-5xl xl:max-w-7xl rounded-xl">
         <div className="grid place-items-center">
           <div className="flex justify-between p-3 bg-[#46D1DD] h-28 md:h-40 xl:h-48 w-full rounded-3xl">
-            <button className='bg-white text-sm font-medium w-32 h-10 p-2 rounded-full'>
+            <button className='bg-white text-xs md:text-sm font-medium w-24 h-8 md:w-32 md:h-10 p-2 rounded-full'>
               Add Cover
             </button>
             <div className='flex space-x-2'>
-              <BsThreeDots className='bg-white w-10 h-10 p-2 rounded-full'/>
-              <HiOutlineShare className='bg-white w-10 h-10 p-2 rounded-full' />
+              <BsThreeDots className='bg-white w-8 h-8 md:w-10 md:h-10 p-2 rounded-full'/>
+              <HiOutlineShare className='bg-white w-8  h-8 md:w-10 md:h-10 p-2 rounded-full' />
             </div>
           </div>
         
@@ -185,7 +185,7 @@ const ClientDash = () => {
         </div>
 
         {/* Tabs Section */}
-        <div className="flex justify-center space-x-4 mt-6 border-gray-300 pb-3 overflow-x-auto">
+        <div className="flex flex-wrap justify-center items-center space-y-2 md:space-x-4 mt-6 border-gray-300 pb-3 overflow-x-auto">
           {["Home", "Collections", "Shop", "About", "Memberships", "Tips"].map(
             (tab, index) => (
               <button key={index} className="text-gray-600 border rounded-full shadow-md hover:text-black px-3 md:px-4 py-1 text-base md:text-lg">
@@ -193,6 +193,9 @@ const ClientDash = () => {
               </button>
             )
           )}
+          <div>
+            <button className='mt-3 bg-yellow-400 hover:bg-yellow-500 text-white px-6 py-2 text-base md:text-lg rounded-full'>Create Post</button>
+          </div>
         </div>
 
 
