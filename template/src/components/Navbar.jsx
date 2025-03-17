@@ -62,7 +62,7 @@ const Navbar = () => {
   return (
     <div className="flex">
       {/* Mobile Hamburger Menu */}
-      <div className="md:hidden p-4">
+      <div className="absolute h-10 md:hidden p-2.5 bg-white">
         <button onClick={() => setIsOpen(!isOpen)} className="text-2xl">
           <RxHamburgerMenu className="text-2xl cursor-pointer z-50" />
         </button>
@@ -109,7 +109,7 @@ const Navbar = () => {
       {/* Overlay when sidebar is open on mobile */}
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-50 md:hidden"
+          className="fixed inset-0 bg-black bg-opacity-80 md:hidden"
           onClick={() => setIsOpen(false)}
         ></div>
       )}
