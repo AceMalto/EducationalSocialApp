@@ -109,7 +109,7 @@ const Navbar = () => {
       {/* Overlay when sidebar is open on mobile */}
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-80 md:hidden"
+          className="fixed inset-0 bg-black bg-opacity-80 md:hidden z-40"
           onClick={() => setIsOpen(false)}
         ></div>
       )}
