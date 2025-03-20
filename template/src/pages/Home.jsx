@@ -48,7 +48,7 @@ const Home = () => {
   return (
     <div className='flex-wrap px-10'>
       <TopNav />
-      <div className='flex w-1/2 items-center flex-wrap space-x-2 space-y-2 px-5'>
+      <div className='flex w-1/2 items-center flex-wrap gap-1.5 px-5'>
         {
           Tags.map((categories, index) => (
             <p key={index} className="w-fit px-5 py-2 bg-gray-200 border border-gray-300 rounded-full text-sm font-medium">{categories}</p>
