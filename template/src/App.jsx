@@ -4,6 +4,8 @@ import Home from './pages/Home'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Recents from './pages/Recents'
 import ClientDash from './pages/ClientDash'
+import CreatePost from './components/CreatePost'
+import Settings from './components/Settings'
 
 function App() {
 
@@ -13,7 +15,7 @@ function App() {
         <Navbar />
         <div className='flex-1'>
           <Routes>
-            <Route path='/' element={<ClientDash/>}/>
+            <Route path='/' element={<Settings/>}/>
           </Routes>
         </div>
       </div>
